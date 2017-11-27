@@ -346,6 +346,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a class="cloud-tie-join-count" href="/2017/04/07/article-title/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count join-count" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -356,9 +366,10 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数 </span>
+                 <span class="post-meta-item-text">热度 </span>
                
                  <span class="leancloud-visitors-count"></span>
+				 <span>%C</span>
              </span>
           
 
@@ -371,7 +382,7 @@
         
         &nbsp; | &nbsp;
         <span id="/2017/04/07/article-title/"class="leancloud_visitors" data-flag-title="article title">
-                 &nbsp;阅读次数
+                 &nbsp;热度
                  </span>
         
  
@@ -487,6 +498,8 @@
 
           
   <div class="comments" id="comments">
+    
+      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
     
   </div>
 
@@ -631,6 +644,11 @@
 </div>
 
 
+<div class="theme-info">
+	<div class="powered-by"></div>
+	<span class="post-count">博客全站共140字</span>
+</div>
+
         
 
         
@@ -735,18 +753,21 @@
 
 
   
-
-
-
-
-
+    
+    <script>
+      var cloudTieConfig = {
+        url: document.location.href, 
+        sourceId: "",
+        productKey: "MTAyMC8zMjAzMC84NTk0",
+        target: "cloud-tie-wrapper"
+      };
+    </script>
+    <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
   
 
 
 
 
-
-  
 
 
 
